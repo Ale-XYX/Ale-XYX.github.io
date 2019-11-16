@@ -3,11 +3,6 @@ function beginScripts() {
     var cover = document.getElementById('cover');
     var clock = document.getElementById('clock');
 
-    if (!localStorage.hasOwnProperty('pyIsAlex')) {
-        var fa = document.getElementById('fa');
-        fa.remove();
-    }
-
     manageClock(clock)
     setTimeout(function() {cover.remove()}, 700);
 }
