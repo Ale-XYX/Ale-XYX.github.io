@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+@keyframes fadeOut {0% {opacity:1;} 100% {opacity:0;}}
+
+* {margin:0; padding:0;}
+html {height: 100%;}
+body {background: #111111; height: 100%;}
+
+#cover {
+    position: fixed;
+    z-index: 3;
+
+    height: 100%;
+    width: 100%;
+
+    background: rgba(17, 17, 17, 1);
+
+    animation: fadeOut 1.0s ease forwards;
+}
+
+#bg {
+    position: fixed;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url(../res/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+}
+
+#util {
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+#logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+
+    width: 200px;
+    height: 35px;
+
+    background: url(../res/logo.png);
+    background-size: 100% 100%;
+}
+
+#clock {
+    z-index: 1;
+
+    color: rgba(160, 160, 160, 1);
+
+    font: 150px Roboto Mono, Roboto, sans-serif;
+    text-align: center;
+}
+
+#search {
+    z-index: 1;
+
+    display: block;
+    width: 500px;
+    height: 75px;
+    margin: 0 auto 0;
+    padding-left: 10px;
+    border: 2px solid rgba(45, 45, 45, 1);
+
+    color: #FFFFFF;
+    background: rgba(30, 30, 30, 1);
+
+    font: 50px Roboto;
+
+    border-radius: 10px;
+    caret-color: #979797;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 100px;
+}
+
+#hub {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto 0;
+    width: 420px;
+    height: 57px;
+}
+
+.tag {
+    width: 60px;
+    height: 150px;
+    margin-top: 43px;
+
+    border-radius: 10px;
+    transition: margin-top 0.5s;
+}
+
+.tag:hover {
+    margin-top: 25px;
+}
+
+#othergrid {
+    display: grid;
+    grid-template-columns: repeat(2, 30px);
+    grid-template-rows: repeat(2, 30px);
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+#other:hover {
+    margin-top: -20px!important;
+}
+
+.icon {
+    margin: 8px auto 0px;
+    width: 40px;
+    height: 40px;
+
+    background: url(../res/icons_ss.png) no-repeat;
+    background-size: 1200% 100%;
+}
+
+.tinyicon {
+    width: 30px;
+    height: 30px;
+
+    background: url(../res/icons_ss.png) no-repeat;
+    background-size: 1200% 100%;
+}
