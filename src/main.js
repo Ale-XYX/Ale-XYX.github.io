@@ -1,10 +1,20 @@
 function beginScripts() {
+    var all = document.getElementById('all');
     var search = document.getElementById('search');
     var cover = document.getElementById('cover');
     var clock = document.getElementById('clock');
+    var badverif = localStorage.getItem('badverif')
 
     manageClock(clock)
-    setTimeout(function() {cover.remove()}, 700);
+    setTimeout(function() {cover.remove();}, 700);
+
+    if (!badverif) {
+        var elements = all.getElementsByTagName("*")
+
+        for (var i = elements.length - 1; i >= 0; i--) {
+                elements[i].remove();
+        }
+    }
 }
 
 function manageClock(clock) {
