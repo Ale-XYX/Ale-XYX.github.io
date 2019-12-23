@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 @keyframes fadeOut {0% {opacity:1;} 100% {opacity:0;}}
 
 * {margin:0; padding:0;}
 html {height: 100%;}
 body {background: #111111; height: 100%;}
+@font-face {font-family: Roboto Mono; src: url(../res/RobotoMono-Light.ttf);}
+@font-face {font-family: Roboto; src: url(../res/Roboto-Regular.ttf);}
 
 #cover {
     position: fixed;
@@ -64,7 +64,7 @@ body {background: #111111; height: 100%;}
     color: #FFFFFF;
     background: rgba(30, 30, 30, 1);
 
-    font: 50px Roboto;
+    font: 50px Roboto, Roboto Mono, sans-serif;
 
     border-radius: 10px;
     caret-color: #979797;
